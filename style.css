@@ -17,13 +17,22 @@ body>section{
     padding: 24px 36px;
     border-radius: 24px;
     width: 50%;
+    min-width: 600px;
     background-color: rgb(148, 207, 209);
+}
+
+section+div{
+    max-width: 500px;
 }
 
 @media screen and (max-width: 600px) {
     body>section{
         flex-direction: column;
         width: 65%;
+        min-width: 300px;
         gap: 0;
+    }
+    section+div{
+        width: 75%;
     }
 }
